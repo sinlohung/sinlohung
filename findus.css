@@ -1,0 +1,151 @@
+/** restau **/
+
+#restau_infos,
+
+#contact_infos {
+
+color:rgb(63, 41, 39);
+
+font-size:14px;
+
+}
+
+#restau_infos h1,
+
+#contact_infos h2,
+
+#notation h2{
+
+color:rgb(63, 41, 39);
+
+font-size:18px;
+
+margin:0 auto 5px auto;
+
+}
+
+#restau_infos p,
+
+#restau_infos ul,
+
+#contact_infos p{
+
+margin:2px auto 5px auto;
+
+}
+
+#restau_infos ul{
+
+padding:0 0 0 10px;
+
+}
+
+#restau_infos ul li{
+
+list-style-type:square;
+
+margin-left:5px;
+
+}
+
+#restau_infos .ui-block-b .ui-btn {
+
+font-size:12px;
+
+}
+
+#restau_infos .ui-block-b .ui-btn-inner{
+
+padding:5px;
+
+}
+
+#contact_buttons a{
+
+color:rgb(63, 41, 39);
+
+}
+
+.ui-icon-map {
+
+background: rgb(63, 41, 39) url(images/map.jpg) no-repeat;
+
+}
+
+.ui-icon-map2{
+
+background: rgb(63, 41, 39) url(images/map2.jpg) no-repeat;
+
+}
+
+/** add the stars to the drop down */
+
+#note_utilisateur-menu a{
+
+padding-left:100px;
+
+position:relative;
+
+}
+
+#note_utilisateur-button span.ui-btn-text{
+
+background:url(images/pagination.png) no-repeat;
+
+}
+
+#note_utilisateur-button span.ui-btn-inner{
+
+padding-left:5px;
+
+}
+
+#note_utilisateur-menu li a:before{
+
+content: "  ";
+
+display:inline-block;
+
+width:115px;
+
+height:20px;
+
+background:url(images/pagination.png) no-repeat;
+
+position:absolute;
+
+left:0px;
+
+}
+
+.one #note_utilisateur-button span.ui-btn-text,
+
+#note_utilisateur-menu li a:before{
+
+background-position: -75px -182px;
+
+}
+
+.two #note_utilisateur-button span.ui-btn-text,
+
+#note_utilisateur-menu li + li a:before{
+
+background-position: -52px -182px;
+
+}
+
+.three #note_utilisateur-button span.ui-btn-text,
+
+#note_utilisateur-menu li + li +li a:before{
+
+background-position: -27px -182px;
+
+}
+
+.four #note_utilisateur-button span.ui-btn-text,
+
+#note_utilisateur-menu li + li +li +li a:before{
+
+background-position: -2px -182px;
+
+}

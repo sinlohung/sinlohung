@@ -1,0 +1,282 @@
+<!--file description-->
+<!-- Assignemnt 1 for SIT313-->
+<!--Developer: Sin Lo Hung-->
+<!--Student ID: 213071913 -->
+<!--update:17/8/2015-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Miss Jackson Cafe</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css">
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="general.css">
+
+<!--script for the sliding header bar-->
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<!--style script for the sliding header bar-->
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #000000;
+    border: solid 1px #000000;
+}
+
+#panel {
+    padding: 5px;
+    display: none;
+	background-color: #FFFFFF;
+	
+}
+
+</style>
+
+</head>
+
+<body> 
+
+
+<!--Home header-->
+<section id="page1" data-role="page">
+<div id="flip" data-role="header"><a href="#" data-icon="grid" data-iconpos="left"></a>Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+        
+               <a href="#" class="ui-btn-active">Home</a>
+			   <a href="#page2" >Menu</a>
+               <a href="#page3">find us</a>
+				<a href="#page4">feedback</a>
+                <a href="#page5">Developer</a>
+				<a href="#page6">Search</a>
+</nav>
+</div>
+
+<!--Home body-->
+<div data-role="body">
+<ul>
+<p><img src="missjackson2.jpg" align="middle"></p>
+</ul>
+</div>
+</section>
+
+
+<!--Menu header-->
+<section id="page2" data-role="page">
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+        
+			   <a href="#" class="ui-btn-active" >Menu</a>               
+</nav>
+</div>
+
+
+<!--Menu body-->
+<div data-role="body">
+<ul>
+<h1>Menu</h1>
+<img src="coffee1.jpg" align="middle" >
+</ul>
+</div>
+
+<div data-role="body">
+<ul>
+<h2>Breakfast</h2>
+<a href="#recipe" ><img src="dish.jpg" alt="see receipt"></a>
+</ul>
+</div>
+</section>
+
+<!--Recipe header-->
+<section id="recipe" data-role="page">
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">    		 
+</nav>
+</div>
+<!--Recipe body-->
+<div data-role="body">
+<ul>
+<h1>Recipe</h1>
+<h3> Tofu Speical</h3>
+<p>Tofu, Green pepper, parsley on a crepe
+<h3>Tomato Land</h3>
+<p>Tomatos, Avocado, with creamy cheese and peppermint on top of a toast</p>
+<h3>Sweetcorns & Seasons</h3>
+<p>Sweet corns, eggs, Avocado, salad</p>
+</ul>
+</div>
+</section>
+
+
+
+
+<!-- find us header-->
+<section id="page3" data-role="page">
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+</nav>
+</div>
+
+
+<!--find us body-->
+	<div data-role="content">
+	<div class="ui-grid-a" id="restau_infos">	
+		<div class="ui-block-a">
+		<h1> miss jackson cafe</h1>
+		<p><strong>  enter from jackson street</strong></p>
+		<p> On the menu: </p>
+			<ul> 
+				<li> Sweetcorns & seasons</li>
+				<li> Tofu special </li>
+				<li> Tomato Land </li>
+			</ul>			
+		</div>		
+		<div class="ui-block-b">
+		<p><img src="map2.jpg" alt="view our website"/></p>
+		<p><a href="missjackson.com.au" rel="external" data-role="button"> See our website</a></p>
+		</div>
+	</div>
+    </hr>
+	
+	<div class="ui-grid-a" id="contact_infos">	
+		<div class="ui-block-a">
+		<h2> Contact us</h2>
+		<p>2/19 Grey Street, </p>
+		<p> St Kilda 3182 </p>
+        <p>9534 8415</p>	
+        <p>missjackson@missjackson.com.au</p>
+        <p>Open Tue-Sun 7am-4pm</p>		
+		</div>		
+		<div class="ui-block-b">
+		<img src="map.jpg" alt="our location"/>
+		</div>
+	</div><!-- /grid-a -->
+	<div id="contact_buttons">	
+		<a href="https://www.google.com.au/maps/place/Miss+Jackson+Cafe/@-37.8603231,144.9778622,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad668694cc2226b:0xee8372063a24ca2a" data-role="button" data-icon="maps"> Find us on Google Maps </a> 	
+		<a href="tel:95348415"  data-role="button" data-icon="tel"> Call us </a>	
+	</div>	
+	<hr/>
+</section>
+
+
+<!--Feedback header-->
+<section id="page4" data-role="page">
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+</nav>
+</div>
+
+<!--Feedback body-->
+  <div role="main" class="ui-content">
+   <form action="missjackson@missjackson.com.au" method="post" enctype="text/plain">
+Customer Name:<br>
+<input type="text" name="Customername" value="your name"><br>
+E-mail:<br>
+<input type="text" name="E-mail" value="your email"><br>
+Comment:<br>
+<input type="text" name="Comment" value="your comment" size="50"><br><br>
+	
+	<form>
+	<label for="select-choice-0" class="select"><h2> User rating </h2></label>
+		<select name="note_utilisateur" id="note_utilisateur" data-native-menu="false" data-theme="c" >
+		   <option value="one" class="one"> Not good at all </option>
+		   <option value="two" class="two">Average </option>
+		   <option value="three" class="three">Pretty good </option>
+		   <option value="four" class="four"> Excellent </option>
+		</select>	
+	</form>
+	
+
+	<script type="text/javascript">
+
+	$( '#restau' ).live( 'pageinit',function(event){
+		var SelectedOptionClass = $('option:selected').attr('class');
+		$('div.ui-select').addClass(SelectedOptionClass);
+		
+		$('#note_utilisateur').live('change', function(){	 
+			$('div.ui-select').removeClass(SelectedOptionClass);
+			
+			SelectedOptionClass = $('option:selected').attr('class');
+			$('div.ui-select').addClass(SelectedOptionClass);	
+			
+		 });
+		
+	  
+	});
+
+	</script>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+	</form>
+  </div>
+</div>
+</section>
+
+
+<section id="page5" data-role="page">
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+</nav>
+</div>
+<div data-role="body">
+<ul>
+<h2>Information</h2>
+
+  <li>Developer: missjackson.Ltd</li>
+  <li>update: 17/8/2015</li>
+  <li>Developer Website: www.missjackson.com.au</li>
+  
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>  
+</ul>
+</div>
+</section>
+
+<section id="page6" data-role="page" >
+<div id="flip" data-role="header">Miss Jackson Cafe</div>
+<div id="panel"> 
+<nav data-role="navbar">
+</nav>
+</div>
+
+  <div data-role="main" class="ui-content">
+    <h2>Search the site</h2>
+    
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#page3">Andress</a></li>
+      <li><a href="#page2">Breakfast</a></li>
+      <li><a href="#page2">Coffee</a></li> 
+      <li><a href="#page3">Contact</a></li>           
+      <li><a href="page5">Developer</a></li>
+	  <li><a href="#page4">feedback</a></li>
+	  <li><a href="page3">Find us</a></li>
+      <li><a href="#page1">Home</a></li>
+	  <li><a href="#recipe">Recipe</a></li >
+	  <li><a href="#page3">location</a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+</body>
+</html>
